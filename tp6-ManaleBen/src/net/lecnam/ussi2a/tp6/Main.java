@@ -1,6 +1,7 @@
 package net.lecnam.ussi2a.tp6;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
 
@@ -29,7 +30,25 @@ public class Main {
     public static void main(String[] args){
         //exercice1(10,0);
         //exercice2(10,0);
-        exercice3(10,0);
+        //exercice3(10,0);
+
+        Factorielle f = new Factorielle();
+
+        
+        boolean ok = false;
+        while (!ok);
+        String entree = sc.next();
+        try{
+            double resultat = f.calcul(entree);
+            System.out.println(resultat);
+            ok = true;
+        }catch (IOException e){
+            System.out.println(e.getMessage();
+        }catch (FactorialTooLargeArguementException e){
+            System.out.println(e.getMessage();
+        }catch (FactorialNegativeArgumentException e){
+            System.out.println(e.getMessage();
+        }
 
     }
 }
