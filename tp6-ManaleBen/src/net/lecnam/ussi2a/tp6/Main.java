@@ -6,8 +6,13 @@ public class Main {
         Division d = new Division();
         System.out.println(d.division1(a,b));
     }
-
+    public static void exercice2(int a, int b) {
+        Division d = new Division();
+        System.out.println(d.division2(a,b));
+    }
     public static void main(String[] args){
-        exercice1(10,0);
+        //exercice1(10,0);
+        exercice2(10,0);
+
     }
 }
